@@ -189,8 +189,8 @@ footer{font-size:12px}
 
 /* Circular badge for the full Outsource Nexus logo at the orbit center */
 .art-center{overflow:hidden;background:radial-gradient(circle at 35% 28%,#ffffff,#e2f7fc 76%);border-color:#9edbea}
-.orbit-logo{display:block;width:148px;max-height:105px;object-fit:contain;position:relative;z-index:1;animation:logoBadgePulse 4s ease-in-out infinite;filter:drop-shadow(0 4px 6px rgba(6,62,87,.08))}
-@keyframes logoBadgePulse{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
+.orbit-logo{display:block;width:148px;max-height:105px;object-fit:contain;position:relative;z-index:1;animation:logoBadgeGlow 4s ease-in-out infinite;filter:drop-shadow(0 4px 6px rgba(6,62,87,.08))}
+@keyframes logoBadgeGlow{0%,100%{filter:drop-shadow(0 4px 6px rgba(6,62,87,.08)) drop-shadow(0 0 0 rgba(22,181,229,0))}50%{filter:drop-shadow(0 4px 6px rgba(6,62,87,.08)) drop-shadow(0 0 16px rgba(22,181,229,.55)) drop-shadow(0 0 30px rgba(22,181,229,.25))}}
 @media(max-width:650px){.orbit-logo{width:132px;max-height:94px}}
 @media(prefers-reduced-motion:reduce){.orbit-logo{animation:none}}
 
