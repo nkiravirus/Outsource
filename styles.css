@@ -105,3 +105,11 @@ footer{font-size:12px}
 @media(max-width:650px){.site-header{height:68px}.nav-links{top:67px}.brand-logo{width:110px}.header-clock{gap:6px;margin-right:8px;font-size:9px}.clock-divider{height:12px}#header-time{min-width:70px}.menu-toggle{width:30px;height:34px;flex-shrink:0}}
 @media(max-width:370px){.header-clock{gap:4px;font-size:8px}.brand-logo{width:98px}#header-time{min-width:65px}.menu-toggle{width:26px}}
 @media(prefers-reduced-motion:reduce){.brand-logo{animation:none!important;will-change:auto}}
+
+/* Give the header clock more presence beside the logo */
+.header-clock{margin-left:38px;margin-right:auto;font-size:13px;gap:12px;color:#3f626e}
+#header-time{font-size:13px;min-width:94px}
+.clock-divider{height:17px}
+@media(max-width:850px){.header-clock{margin-left:auto;margin-right:14px;font-size:12px}#header-time{font-size:12px;min-width:88px}}
+@media(max-width:650px){.header-clock{margin-left:auto;margin-right:8px;font-size:10px;gap:6px}#header-time{font-size:10px;min-width:75px}.clock-divider{height:14px}}
+@media(max-width:370px){.header-clock{font-size:9px}#header-time{font-size:9px;min-width:68px}}
