@@ -193,3 +193,20 @@ footer{font-size:12px}
 @keyframes logoBadgePulse{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
 @media(max-width:650px){.orbit-logo{width:132px;max-height:94px}}
 @media(prefers-reduced-motion:reduce){.orbit-logo{animation:none}}
+
+/* Separate outer and inner orbits keep all nine services apart */
+.planet-1{--phase:0s;--angle:0deg;animation-delay:var(--phase)}.planet-1 .float-card{animation-delay:var(--phase)}
+.planet-2{--phase:-14s;--angle:72deg;animation-delay:var(--phase)}.planet-2 .float-card{animation-delay:var(--phase)}
+.planet-3{--phase:-28s;--angle:144deg;animation-delay:var(--phase)}.planet-3 .float-card{animation-delay:var(--phase)}
+.planet-4{--phase:-42s;--angle:216deg;animation-delay:var(--phase)}.planet-4 .float-card{animation-delay:var(--phase)}
+.planet-5{--phase:-56s;--angle:288deg;animation-delay:var(--phase)}.planet-5 .float-card{animation-delay:var(--phase)}
+.planet-6{--phase:0s;--angle:0deg;animation-delay:var(--phase)}.planet-6 .float-card{animation-delay:var(--phase)}
+.planet-7{--phase:-17.5s;--angle:90deg;animation-delay:var(--phase)}.planet-7 .float-card{animation-delay:var(--phase)}
+.planet-8{--phase:-35s;--angle:180deg;animation-delay:var(--phase)}.planet-8 .float-card{animation-delay:var(--phase)}
+.planet-9{--phase:-52.5s;--angle:270deg;animation-delay:var(--phase)}.planet-9 .float-card{animation-delay:var(--phase)}
+.inner-orbit{--orbit-size:360px}
+.icon-web{background:#e4f4f7;color:#167b9a}
+.icon-marketing{background:#d8f5fc;color:#079bc9}
+@media(max-width:1150px){.inner-orbit{--orbit-size:330px}}
+@media(max-width:850px){.inner-orbit{--orbit-size:320px}}
+@media(max-width:650px){.inner-orbit{--orbit-size:280px}.planet-track.inner-orbit .float-card{min-width:145px;max-width:150px;padding:8px;gap:6px}.planet-track.inner-orbit .float-card b{font-size:10px}.planet-track.inner-orbit .float-card small{font-size:8px}}
