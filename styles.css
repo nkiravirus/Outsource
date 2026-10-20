@@ -220,3 +220,9 @@ footer{font-size:12px}
 @media(max-width:1250px){.hero{display:block;min-height:auto;padding-left:6%;padding-right:6%}.hero-copy{max-width:620px;margin:0 auto}.hero-art{width:min(100%,720px);height:520px;margin:10px auto 0}.orbit-one{width:440px;height:440px}.orbit-two{width:340px;height:340px}.planet-track{--orbit-size:440px}.inner-orbit{--orbit-size:340px}.planet-track .float-card{min-width:170px}}
 @media(max-width:850px){.hero-art{height:490px}.orbit-one{width:420px;height:420px}.orbit-two{width:320px;height:320px}.planet-track{--orbit-size:420px}.inner-orbit{--orbit-size:320px}.planet-track .float-card{min-width:160px}}
 @media(max-width:650px){.hero-art{width:calc(100% + 32px);height:350px;transform:scale(.82);margin:-4px -16px -8px}.orbit-one{width:340px;height:340px}.orbit-two{width:270px;height:270px}.orbit-three{width:205px;height:205px}.planet-track{--orbit-size:340px}.inner-orbit{--orbit-size:270px}.planet-track .float-card{min-width:136px;max-width:140px;padding:8px;gap:6px}.planet-track .float-card b{font-size:10px;line-height:1.2}.planet-track .float-card small{font-size:8px}.planet-track .card-icon{width:25px;height:25px}}
+
+/* Stagger the inner planets between outer-ring services to prevent card collisions */
+.planet-6{--angle:45deg}
+.planet-7{--angle:135deg}
+.planet-8{--angle:225deg}
+.planet-9{--angle:315deg}
