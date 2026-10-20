@@ -130,3 +130,27 @@ footer{font-size:12px}
 .icon-surveys{background:#e9f7f9;color:#258ca8}
 @media(max-width:850px){.card-software{top:27px;right:0}.card-apps{right:0;bottom:25px}.card-surveys{left:0;top:180px}}
 @media(max-width:650px){.card-ops{left:0;top:3px}.card-software{right:0;top:3px}.card-tech{right:0;top:125px}.card-surveys{left:0;top:125px}.card-books{left:0;bottom:5px}.card-apps{right:0;bottom:5px}.float-card{min-width:178px;padding:11px}.float-card b{font-size:12px}.float-card small{font-size:10px}.center-symbol{font-size:50px}}
+
+/* Seven service planets orbit the ON sun */
+.hero-art{isolation:isolate}
+.orbit-three{width:220px;height:220px;border-style:dotted;border-color:rgba(14,169,210,.24);animation:orbitBreathe 9s ease-in-out infinite reverse}
+.planet-track{--orbit-size:410px;position:absolute;z-index:3;left:50%;top:50%;width:var(--orbit-size);height:var(--orbit-size);margin:0;transform:translate(-50%,-50%);transform-origin:center;border-radius:50%;animation:planetOrbit 70s linear infinite;pointer-events:none}
+.planet-track .float-card{position:absolute;left:50%!important;right:auto!important;top:0!important;bottom:auto!important;min-width:178px;transform:translate(-50%,-50%);transform-origin:center;animation:planetCounterOrbit 70s linear infinite;pointer-events:auto}
+.planet-1{--phase:0s;--angle:0deg;animation-delay:var(--phase)}.planet-1 .float-card{animation-delay:var(--phase)}
+.planet-2{--phase:-10s;--angle:51.43deg;animation-delay:var(--phase)}.planet-2 .float-card{animation-delay:var(--phase)}
+.planet-3{--phase:-20s;--angle:102.86deg;animation-delay:var(--phase)}.planet-3 .float-card{animation-delay:var(--phase)}
+.planet-4{--phase:-30s;--angle:154.29deg;animation-delay:var(--phase)}.planet-4 .float-card{animation-delay:var(--phase)}
+.planet-5{--phase:-40s;--angle:205.71deg;animation-delay:var(--phase)}.planet-5 .float-card{animation-delay:var(--phase)}
+.planet-6{--phase:-50s;--angle:257.14deg;animation-delay:var(--phase)}.planet-6 .float-card{animation-delay:var(--phase)}
+.planet-7{--phase:-60s;--angle:308.57deg;animation-delay:var(--phase)}.planet-7 .float-card{animation-delay:var(--phase)}
+@keyframes planetOrbit{to{transform:translate(-50%,-50%) rotate(360deg)}}
+@keyframes planetCounterOrbit{to{transform:translate(-50%,-50%) rotate(-360deg)}}
+.hero-art:hover .planet-track,.hero-art:hover .planet-track .float-card{animation-play-state:paused}
+@media(max-width:850px){.planet-track{--orbit-size:390px}.planet-track .float-card{min-width:165px;padding:11px}.planet-track .float-card b{font-size:12px}.planet-track .float-card small{font-size:10px}}
+@media(max-width:650px){.planet-track{--orbit-size:360px}.planet-track .float-card{min-width:153px;max-width:160px;padding:9px;gap:7px}.planet-track .card-icon{width:27px;height:27px;flex:none}.planet-track .float-card b{font-size:11px}.planet-track .float-card small{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.planet-track{animation:none;transform:translate(-50%,-50%) rotate(var(--angle))}.planet-track .float-card{animation:none;transform:translate(-50%,-50%) rotate(calc(-1 * var(--angle)))}.orbit-three{animation:none}}
+.art-center{z-index:2}
+.art-center:before{content:"";position:absolute;inset:-10px;border:1px dashed rgba(14,169,210,.48);border-radius:50%;animation:sunHalo 18s linear infinite}
+.icon-hr{background:#e2f7fc;color:#168ca9}
+@keyframes sunHalo{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.art-center:before{animation:none}}
