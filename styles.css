@@ -154,3 +154,20 @@ footer{font-size:12px}
 .icon-hr{background:#e2f7fc;color:#168ca9}
 @keyframes sunHalo{to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){.art-center:before{animation:none}}
+
+/* Give the planetary service orbit more room and stronger contrast */
+.hero{min-height:770px}
+.hero-art{height:530px}
+.orbit-one{width:500px;height:500px}
+.orbit-two{width:380px;height:380px}
+.orbit-three{width:250px;height:250px}
+.planet-track{--orbit-size:500px}
+.planet-track .float-card{min-width:184px;background:linear-gradient(145deg,#0a3548,#062b3d);border:1px solid rgba(22,181,229,.42);box-shadow:0 14px 36px rgba(3,34,49,.28),0 0 18px rgba(22,181,229,.09)}
+.planet-track .float-card b{color:#f2fbfd}
+.planet-track .float-card small{color:#b4d0da}
+.planet-track .card-icon{background:#d8f5fc;color:#087da1}
+.planet-track .card-check{color:#55d1f0}
+.planet-track .float-card:hover{background:linear-gradient(145deg,#0d4960,#07384d);border-color:#43c9e9;box-shadow:0 16px 42px rgba(3,34,49,.36),0 0 24px rgba(22,181,229,.2)}
+@media(max-width:1150px){.hero{min-height:720px}.hero-art{height:470px}.orbit-one{width:410px;height:410px}.orbit-two{width:320px;height:320px}.orbit-three{width:220px;height:220px}.planet-track{--orbit-size:410px}.planet-track .float-card{min-width:160px}}
+@media(max-width:850px){.hero{min-height:690px}.hero-art{height:440px}.orbit-one{width:390px;height:390px}.orbit-two{width:300px;height:300px}.planet-track{--orbit-size:390px}}
+@media(max-width:650px){.hero{min-height:auto}.hero-art{height:380px;transform:scale(.85);margin:-5px -50px -10px}.orbit-one{width:370px;height:370px}.orbit-two{width:285px;height:285px}.planet-track{--orbit-size:370px}.planet-track .float-card{min-width:150px;max-width:158px;padding:9px;gap:7px}.planet-track .float-card b{font-size:11px}.planet-track .float-card small{font-size:9px}}
