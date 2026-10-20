@@ -171,3 +171,8 @@ footer{font-size:12px}
 @media(max-width:1150px){.hero{min-height:720px}.hero-art{height:470px}.orbit-one{width:410px;height:410px}.orbit-two{width:320px;height:320px}.orbit-three{width:220px;height:220px}.planet-track{--orbit-size:410px}.planet-track .float-card{min-width:160px}}
 @media(max-width:850px){.hero{min-height:690px}.hero-art{height:440px}.orbit-one{width:390px;height:390px}.orbit-two{width:300px;height:300px}.planet-track{--orbit-size:390px}}
 @media(max-width:650px){.hero{min-height:auto}.hero-art{height:380px;transform:scale(.85);margin:-5px -50px -10px}.orbit-one{width:370px;height:370px}.orbit-two{width:285px;height:285px}.planet-track{--orbit-size:370px}.planet-track .float-card{min-width:150px;max-width:158px;padding:9px;gap:7px}.planet-track .float-card b{font-size:11px}.planet-track .float-card small{font-size:9px}}
+
+/* Bring the hero content closer to the header */
+.hero{padding-top:76px}
+@media(max-width:850px){.hero{padding-top:62px}}
+@media(max-width:650px){.hero{padding-top:48px}}
