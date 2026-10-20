@@ -53,3 +53,37 @@ footer{font-size:10px}
 .quick-link-card small{font-size:11px}
 @media(max-width:850px){.nav-links{font-size:12px}}
 @media(max-width:650px){.hero-intro{font-size:15px}.nav-links{font-size:14px}.service-card>p,.services-heading>p,.intro-aside p,.software-copy>p,.contact-content>p{font-size:13px}.hero-note{font-size:10px}}
+
+/* Site-wide type scale: improve readability across every section */
+body{font-size:18px}
+.nav-links{font-size:15px;gap:30px}
+.nav-cta{font-size:14px}
+.eyebrow,.section-label{font-size:12px;letter-spacing:1.2px}
+.hero-intro{font-size:18px;max-width:460px}
+.button{font-size:14px;height:54px}
+.text-link,.arrow-link{font-size:14px}
+.hero-note{font-size:12px}
+.hero-proof{font-size:9px}
+.hero-bottom{font-size:10px}
+.intro-aside p,.software-copy>p,.contact-content>p{font-size:16px}
+.principle-no{font-size:11px}
+.principles b{font-size:16px}
+.principles p{font-size:13px}
+.services-heading>p{font-size:14px;max-width:300px}
+.service-index{font-size:10px}
+.service-card h3{font-size:22px}
+.service-card>p{font-size:14px;line-height:1.65}
+.service-tags span{font-size:11px;padding:7px 9px}
+.service-card{min-height:310px;padding:26px}
+.services-foot{font-size:13px}
+.float-card b{font-size:13px}
+.float-card small{font-size:11px}
+.center-caption{font-size:11px}
+.contact-bottom{font-size:12px}
+.contact-bottom span{font-size:10px}
+.visual-sticker{font-size:10px}
+footer{font-size:12px}
+.quick-link-card b{font-size:16px}
+.quick-link-card small{font-size:13px}
+@media(max-width:850px){.nav-links{gap:17px;font-size:13px}.nav-cta{font-size:13px}.hero-intro{font-size:16px}.service-card{padding:22px}.service-card h3{font-size:20px}.service-card>p{font-size:13px}}
+@media(max-width:650px){.nav-links{gap:18px;font-size:15px}.nav-cta{font-size:14px}.eyebrow,.section-label{font-size:11px}.hero-intro{font-size:16px}.button{font-size:13px}.text-link{font-size:13px}.hero-note{font-size:11px}.principles b{font-size:16px}.principles p{font-size:13px}.services-heading>p{font-size:14px}.service-card{min-height:270px;padding:23px}.service-card h3{font-size:22px}.service-card>p{font-size:14px}.service-tags span{font-size:11px}.services-foot{font-size:12px}.intro-aside p,.software-copy>p,.contact-content>p{font-size:15px}.contact-bottom{font-size:11px}footer{font-size:11px}}
