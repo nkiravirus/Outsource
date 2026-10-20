@@ -176,3 +176,8 @@ footer{font-size:12px}
 .hero{padding-top:76px}
 @media(max-width:850px){.hero{padding-top:62px}}
 @media(max-width:650px){.hero{padding-top:48px}}
+
+/* Further tighten the header-to-hero gap */
+.hero{padding-top:48px}
+@media(max-width:850px){.hero{padding-top:40px}}
+@media(max-width:650px){.hero{padding-top:32px}}
