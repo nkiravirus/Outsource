@@ -43,7 +43,7 @@ const bsMonthStarts2083 = [
   ['2026-10-18', 'कार्तिक'], ['2026-11-17', 'मंसिर'], ['2026-12-16', 'पुष'],
   ['2027-01-15', 'माघ'], ['2027-02-13', 'फागुन'], ['2027-03-15', 'चैत'],
 ].map(([start, month]) => ({ start: Date.parse(`${start}T00:00:00Z`), month }));
-const nepaliDigits = new Intl.NumberFormat('ne-NP');
+const nepaliDigits = new Intl.NumberFormat('ne-NP', { useGrouping: false });
 
 function updateNepaliCalendarDate() {
   const parts = new Intl.DateTimeFormat('en', {
@@ -58,7 +58,7 @@ function updateNepaliCalendarDate() {
   if (gregorianMidnight >= firstBsNewYear && gregorianMidnight < nextBsNewYear) {
     const currentMonth = bsMonthStarts2083.reduce((latest, month) => month.start <= gregorianMidnight ? month : latest, null);
     const day = Math.floor((gregorianMidnight - currentMonth.start) / 86400000) + 1;
-    formatted = `${currentMonth.month} ${nepaliDigits.format(day)}, ${nepaliDigits.format(2083)}`;
+    formatted = `${currentMonth.month} ${nepaliDigits.format(day)} ${nepaliDigits.format(2083)}`;
   }
 
   document.querySelector('#header-nepali-date').textContent = formatted;
