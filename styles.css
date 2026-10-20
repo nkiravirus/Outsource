@@ -226,3 +226,22 @@ footer{font-size:12px}
 .planet-7{--angle:135deg}
 .planet-8{--angle:225deg}
 .planet-9{--angle:315deg}
+
+/* One shared outer orbit with compact circular service badges */
+.orbit-two,.orbit-three{display:none}
+.planet-track,.planet-track.inner-orbit{--orbit-size:500px}
+.planet-1{--phase:0s;--angle:0deg}.planet-2{--phase:-7.777s;--angle:40deg}.planet-3{--phase:-15.555s;--angle:80deg}
+.planet-4{--phase:-23.333s;--angle:120deg}.planet-5{--phase:-31.111s;--angle:160deg}.planet-6{--phase:-38.889s;--angle:200deg}
+.planet-7{--phase:-46.667s;--angle:240deg}.planet-8{--phase:-54.444s;--angle:280deg}.planet-9{--phase:-62.222s;--angle:320deg}
+.planet-track .float-card{
+  width:138px;height:138px;min-width:0;max-width:none;padding:13px;border-radius:50%;
+  flex-direction:column;justify-content:center;gap:7px;text-align:center;overflow:hidden;
+}
+.planet-track .float-card>span:nth-child(2){display:block;width:100%}
+.planet-track .float-card b{font-size:11px;line-height:1.2}
+.planet-track .float-card small{font-size:8px;line-height:1.2;margin-top:3px}
+.planet-track .card-icon{width:29px;height:29px;flex:none;border-radius:50%;font-size:15px}
+.planet-track .card-check{display:none}
+@media(max-width:1250px){.orbit-one{width:440px;height:440px}.planet-track,.planet-track.inner-orbit{--orbit-size:440px}.planet-track .float-card{width:124px;height:124px}}
+@media(max-width:850px){.orbit-one{width:420px;height:420px}.planet-track,.planet-track.inner-orbit{--orbit-size:420px}.planet-track .float-card{width:118px;height:118px;padding:10px}.planet-track .float-card b{font-size:10px}.planet-track .float-card small{font-size:7px}}
+@media(max-width:650px){.orbit-one{width:370px;height:370px}.planet-track,.planet-track.inner-orbit{--orbit-size:370px}.planet-track .float-card{width:104px;height:104px;padding:8px;gap:5px}.planet-track .float-card b{font-size:9px}.planet-track .float-card small{font-size:7px}.planet-track .card-icon{width:24px;height:24px;font-size:13px}}
