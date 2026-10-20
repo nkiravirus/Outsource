@@ -181,3 +181,8 @@ footer{font-size:12px}
 .hero{padding-top:48px}
 @media(max-width:850px){.hero{padding-top:40px}}
 @media(max-width:650px){.hero{padding-top:32px}}
+
+/* Keep the hero eyebrow visible below the sticky header on logo navigation */
+#hero{scroll-margin-top:88px}
+@media(max-width:850px){#hero{scroll-margin-top:78px}}
+@media(max-width:650px){#hero{scroll-margin-top:68px}}
