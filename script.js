@@ -28,7 +28,6 @@ const nepalTime = new Intl.DateTimeFormat('en-GB', {
   second: '2-digit',
   hour12: true,
 });
-
 function updateHeaderClock() {
   const now = new Date();
   document.querySelector('#header-date').textContent = nepalDate.format(now);
@@ -37,3 +36,23 @@ function updateHeaderClock() {
 
 updateHeaderClock();
 window.setInterval(updateHeaderClock, 1000);
+
+async function updateNepaliCalendarDate() {
+  const dateParts = new Intl.DateTimeFormat('en', {
+    timeZone: 'Asia/Kathmandu', year: 'numeric', month: 'numeric', day: 'numeric',
+  }).formatToParts(new Date());
+  const date = Object.fromEntries(dateParts.map(({ type, value }) => [type, value]));
+  const query = new URLSearchParams({ year: date.year, month: date.month, day: date.day });
+  try {
+    const response = await fetch(`https://npdates.org/api/convert/ad-to-bs?${query}`);
+    if (!response.ok) throw new Error('Nepali date service unavailable');
+    const result = await response.json();
+    const nepaliDate = result.bs?.formatted || result.bs?.nepali || result.bs?.date;
+    if (!nepaliDate) throw new Error('Nepali date not returned');
+    document.querySelector('#header-nepali-date').textContent = nepaliDate;
+  } catch {
+    document.querySelector('#header-nepali-date').textContent = 'Unavailable';
+  }
+}
+
+updateNepaliCalendarDate();

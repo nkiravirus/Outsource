@@ -113,3 +113,8 @@ footer{font-size:12px}
 @media(max-width:850px){.header-clock{margin-left:auto;margin-right:14px;font-size:12px}#header-time{font-size:12px;min-width:88px}}
 @media(max-width:650px){.header-clock{margin-left:auto;margin-right:8px;font-size:10px;gap:6px}#header-time{font-size:10px;min-width:75px}.clock-divider{height:14px}}
 @media(max-width:370px){.header-clock{font-size:9px}#header-time{font-size:9px;min-width:68px}}
+
+.clock-dates{display:flex;flex-direction:column;gap:3px;line-height:1.25}
+.clock-dates>span{white-space:nowrap}
+.clock-dates small{display:inline-block;min-width:22px;color:#079bc9;font-size:9px;font-weight:700;letter-spacing:.5px}
+@media(max-width:650px){.clock-dates{gap:2px}.clock-dates small{min-width:19px;font-size:8px}.header-clock{font-size:9px}}
