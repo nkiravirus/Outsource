@@ -246,3 +246,25 @@ footer{font-size:12px}
 @media(max-width:1250px){.orbit-one{width:440px;height:440px}.planet-track,.planet-track.inner-orbit{--orbit-size:440px}.planet-track .float-card{width:124px;height:124px}}
 @media(max-width:850px){.orbit-one{width:420px;height:420px}.planet-track,.planet-track.inner-orbit{--orbit-size:420px}.planet-track .float-card{width:118px;height:118px;padding:10px}.planet-track .float-card b{font-size:12px}.planet-track .float-card small{font-size:9px}}
 @media(max-width:650px){.orbit-one{width:370px;height:370px}.planet-track,.planet-track.inner-orbit{--orbit-size:370px}.planet-track .float-card{width:104px;height:104px;padding:8px;gap:4px}.planet-track .float-card b{font-size:11px}.planet-track .float-card small{font-size:8px}}
+
+/* Clear, direct contact paths for the Let's Talk section */
+.contact{min-height:0;padding-top:76px;padding-bottom:28px}
+.contact-layout{position:relative;display:grid;grid-template-columns:.9fr 1.1fr;gap:7%;align-items:center;padding:38px 0 52px}
+.contact-content{padding:0;max-width:530px}
+.contact h2{font-size:clamp(38px,4vw,54px);line-height:1.12}
+.contact-content>p{font-size:15px;line-height:1.75;max-width:430px;margin:20px 0 28px}
+.contact-actions{display:flex;align-items:center;gap:23px;flex-wrap:wrap}
+.whatsapp-button{font-size:13px;gap:18px;border-radius:4px;box-shadow:0 10px 25px rgba(0,0,0,.14)}
+.contact-email-action{color:#e5f6fa;font-size:13px;font-weight:650;border-bottom:1px solid rgba(229,246,250,.48);padding:0 0 5px}
+.contact-email-action span{color:var(--green);margin-left:7px}
+.contact-details{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.contact-detail{min-width:0;min-height:112px;padding:20px;background:rgba(255,255,255,.075);border:1px solid rgba(201,235,243,.17);border-radius:5px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:7px}
+.contact-address{grid-column:1/-1;min-height:102px}
+.contact-detail-label{font-size:10px;letter-spacing:1.5px;font-weight:750;color:#78d9ef;margin-bottom:2px}
+.contact-detail>a{color:#f3fbfd;font-size:14px;line-height:1.5;overflow-wrap:anywhere;transition:color .2s}
+.contact-detail>a:hover,.contact-email-action:hover{color:#73def5}
+.contact-address>a{display:flex;align-items:center;justify-content:space-between;gap:16px;width:100%;font-size:16px}
+.contact-address>a span,.contact-website>a span{color:var(--green);flex:none}
+.contact-bottom{font-size:10px}
+@media(max-width:900px){.contact-layout{grid-template-columns:1fr;gap:24px}.contact-content{max-width:650px}.contact-details{max-width:700px}}
+@media(max-width:600px){.contact{padding-top:56px;padding-bottom:22px}.contact-layout{padding:30px 0 36px;gap:26px}.contact h2{font-size:38px}.contact-content>p{font-size:14px}.contact-details{grid-template-columns:1fr}.contact-address{grid-column:auto}.contact-detail{min-height:94px;padding:16px}.contact-address>a{font-size:14px}.contact-detail>a{font-size:14px}.contact-actions{align-items:flex-start;flex-direction:column;gap:18px}.contact-bottom{flex-wrap:wrap;gap:12px}}
