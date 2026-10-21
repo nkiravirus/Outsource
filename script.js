@@ -15,12 +15,13 @@ navigation.querySelectorAll('a').forEach((link) => {
 
 document.querySelector('#year').textContent = new Date().getFullYear();
 
-const careersLink = document.querySelector('#careers');
 const careersDialog = document.querySelector('#careers-dialog');
 
-careersLink.addEventListener('click', (event) => {
-  event.preventDefault();
-  careersDialog.showModal();
+document.querySelectorAll('[data-careers-dialog]').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    careersDialog.showModal();
+  });
 });
 
 careersDialog.addEventListener('click', (event) => {
