@@ -15,6 +15,18 @@ navigation.querySelectorAll('a').forEach((link) => {
 
 document.querySelector('#year').textContent = new Date().getFullYear();
 
+const careersLink = document.querySelector('#careers');
+const careersDialog = document.querySelector('#careers-dialog');
+
+careersLink.addEventListener('click', (event) => {
+  event.preventDefault();
+  careersDialog.showModal();
+});
+
+careersDialog.addEventListener('click', (event) => {
+  if (event.target === careersDialog) careersDialog.close();
+});
+
 const nepalDate = new Intl.DateTimeFormat('en-GB', {
   timeZone: 'Asia/Kathmandu',
   day: '2-digit',
