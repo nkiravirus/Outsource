@@ -325,10 +325,10 @@ footer{font-size:12px}
 .careers-vacancy-cta{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:16px;padding:23px 26px;background:#063e57;color:#fff;border:1px solid rgba(22,181,229,.28);border-radius:6px}
 .careers-vacancy-cta h3{font:700 21px/1.25 var(--display);margin:0 0 5px}
 .careers-vacancy-cta p{font-size:14px;line-height:1.5;color:#d0e3e9;margin:0}
-.careers-vacancy-button{background:#25D366;color:#063e57;cursor:pointer}
+.careers-vacancy-button{min-width:260px;justify-content:space-between;padding-left:25px;padding-right:25px;background:#25D366;color:#063e57;cursor:pointer}
 .careers-vacancy-button:hover{background:#20bd5a}
 @media(max-width:850px){.careers-heading{grid-template-columns:1fr;gap:17px}.careers-grid{grid-template-columns:1fr 1fr}.career-card:last-child{grid-column:1/-1}}
-@media(max-width:600px){.careers{padding-top:58px;padding-bottom:60px}.careers-heading{margin:22px 0}.careers-heading h2{font-size:36px}.careers-heading>p{font-size:15px}.careers-grid{grid-template-columns:1fr}.career-card:last-child{grid-column:auto}.career-card{min-height:0;padding:22px}.career-card h3{font-size:21px;margin-top:15px}.careers-vacancy-cta{align-items:flex-start;flex-direction:column;padding:22px}.careers-vacancy-cta h3{font-size:20px}}
+@media(max-width:600px){.careers{padding-top:58px;padding-bottom:60px}.careers-heading{margin:22px 0}.careers-heading h2{font-size:36px}.careers-heading>p{font-size:15px}.careers-grid{grid-template-columns:1fr}.career-card:last-child{grid-column:auto}.career-card{min-height:0;padding:22px}.career-card h3{font-size:21px;margin-top:15px}.careers-vacancy-cta{align-items:flex-start;flex-direction:column;padding:22px}.careers-vacancy-cta h3{font-size:20px}.careers-vacancy-button{width:100%;min-width:0;justify-content:space-between}}
 
 /* Portfolio-led software artwork replaces the generic analytics dashboard */
 .software-showcase{height:440px;position:relative;overflow:hidden;border-radius:5px;background:radial-gradient(ellipse at 50% 48%,#0e6684 0%,#084b66 45%,#06354a 100%);box-shadow:0 18px 46px rgba(6,62,87,.16)}
@@ -507,3 +507,4 @@ footer{font-size:12px}
 .service-tags span{padding:4px 6px;font-size:10px;line-height:1.2}
 .service-card-docs .service-tags{gap:4px}
 .service-card-docs .service-tags span{padding:4px 6px;font-size:9px;line-height:1.2}
+@media(max-width:700px){.software-overview{grid-template-columns:minmax(0,1fr)}.software-copy{min-width:0}.software-showcase{width:100%;max-width:100%;min-width:0}}
